@@ -1,0 +1,374 @@
+/* code for google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* code for intire website */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.primary-container{
+    width: 90%;
+    margin: 0 auto;
+}
+.secondary-container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* header area style start */
+.header-area{
+    background: #ffffff;
+    padding: 30px 0;
+}
+.flexible-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-area h2{
+    color: #3A3A3A;
+    font-size: 24px;
+    font-weight: 700;
+}
+.nav-area ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-area ul li{
+    padding: 10px 15px;
+}
+.nav-area ul li a{
+    text-decoration: none;
+    color: #3A3A3A;
+    font-size: 16px;
+    font-weight: 600;
+}
+.nav-area ul li .fa-solid{
+    text-decoration: none;
+    color: #000000;
+    font-size: 22px;
+    font-weight: 600;
+}
+.fa-bars, .fa-cart-shopping{
+    display: none;
+    font-size: 20px;
+}
+/* header area style end */
+
+/* banner section style start */
+.banner-cover{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 180px;
+}
+.banner-title{
+    color: #3A3A3A;
+    font-size: 50px;
+    font-weight: 700;
+}
+.banner-description{
+    color: #3A3A3A;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 20px 0;
+}
+.primary-btn{
+    background-color: #E02C6D;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+}
+
+.banner-image{
+    position: relative;
+}
+.camera{
+    position: absolute;
+    top: 10%;
+}
+/* banner section style end */
+
+/* company name section start */
+.company-name{
+    padding: 50px 0;
+}
+.all-company{
+    border-top: 1px solid #C0CCDA;
+    border-bottom: 1px solid #C0CCDA;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 30px 0;
+}
+/* company name section end */
+
+/* popular collection section start */
+.popular-collection{
+    padding: 50px 0; 
+}
+.total-collection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+.single-collection{
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+.section-title{
+    color: #3A3A3A;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.collection-title h3{
+    color: #18191F;
+    font-size: 28px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.collection-title .amount{
+    color: #000;
+    font-size: 24px;
+    font-weight: 400;
+}
+.star i{
+    color: #f98000;
+    font-size: 12px;
+}
+.rate{
+    color: #5E6366;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.about-collection h4{
+    color: #787885;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+}
+.loading{
+    text-align: right;
+    padding: 30px 0;
+}
+.loading h3{
+    color: #E02C6D;
+    font-size: 16px;
+    font-weight: 700;
+}
+.loading i{
+    margin-left: 10px;
+}
+/* popular collection section end */
+
+/* call to action style start */
+.call-to-action{
+    padding-bottom: 90px;
+}
+.main-topic{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.action-title{
+    color: #0A0826;
+    font-size: 36px;
+    font-weight: 700;
+}
+.action-description{
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 600;
+    padding-right: 20px;
+}
+/* call to action style end */
+
+/* footer area style start */
+.footer-section{
+    padding: 50px 0;
+    background-color: #0a0826;
+    text-align: center;
+}
+.footer-title{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+}
+.footer-description{
+    color: #D9DBE1;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+}
+.footer-icons{
+    padding-top: 15px; 
+}
+.fa-brands{
+    color: #fff;
+    padding: 10px;
+    background-color: #c2c2c637;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+/* footer area style end */
+
+
+
+
+
+
+/* responsive section start */
+
+/* responsive for small device */
+
+@media screen and (max-width: 688px){
+    .fa-bars, .fa-cart-shopping{
+        display: block;
+        margin-right: 15px;
+    }
+    .nav-area{
+        display: none;
+    }
+    .primary-container{
+        width: 98%;
+        margin: auto;
+    }
+    .secondary-container{
+        width: 98%;
+        margin: auto;
+    }
+    .logo-area h2{
+        font-size: 20px;
+    }
+    .banner-cover{
+        flex-direction: column-reverse;
+    }
+    .banner-title{
+        font-size: 28px;
+    }
+    .banner-text{
+        margin-top: -150px;
+        text-align: center;
+    }
+    .camera-background img{
+        height: 257px;
+        width: 257px;
+    }
+    .camera img{
+        height: 190px;
+        width: 200px;
+        top: 15%;
+    }
+    .all-company{
+        text-align: center;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 10 0 0 0;
+    }
+    .company img{
+        height: 30px;
+        width: 55px;
+    }
+    .popular-collection{
+        padding: 0; 
+    }
+    .section-title{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .total-collection{
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+    }
+    .single-collection{
+        padding: 10px;
+    }
+    .loading{
+        padding: 0;
+    }
+    .call-to-action{
+        padding: 0;
+    }
+    .text-side{
+        text-align: center;
+    }
+    .main-topic{
+        flex-direction: column-reverse;
+    }
+}
+
+
+/* responsive for medium device */
+
+@media screen and (min-width: 689px) and (max-width: 992px){
+    .flexible-area{
+        flex-direction: column;
+    }
+    .nav-area{
+        flex-direction: column;
+    }
+    .primary-container{
+        width: 90%;
+        margin: auto;
+    }
+    .secondary-container{
+        width: 90%;
+        margin: auto;
+        box-sizing: border-box;
+    }
+    .banner-cover{
+        flex-direction: column-reverse;
+    }
+    .banner-text{
+        margin-top: -150px;
+        text-align: center;
+    }
+    .all-company{
+        text-align: center;
+        grid-template-columns: repeat(4, 1fr);
+        padding-top: 30;
+    }
+    .popular-collection{
+        padding: 50px 0; 
+    }
+    .single-collection{
+        padding: 0;
+    }
+    .section-title{
+        margin-bottom: 20px;
+    }
+    .total-collection{
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 30px;
+    }  
+    .single-collection{
+        padding: 10px;
+    }
+    .loading{
+        padding: 0;
+    }
+    .call-to-action{
+        padding: 0;
+    }
+    .image-side{
+        margin-bottom: 20px;
+    }
+    .text-side{
+        text-align: center;
+    }
+    .main-topic{
+        flex-direction: column-reverse;
+    }
+}
